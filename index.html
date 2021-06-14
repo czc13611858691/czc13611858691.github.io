@@ -103,6 +103,17 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 
 <p>初始化仓库，上传github</p>
+<h3 id="遇到的几个问题"><a href="#遇到的几个问题" class="headerlink" title="遇到的几个问题"></a>遇到的几个问题</h3><p>404</p>
+<ul>
+<li>  仓库名&lt;用户名&gt;.github.io</li>
+<li>  public仓库</li>
+<li>  npm install 运行一下  重新生成页面再上传</li>
+</ul>
+<p>无法上传</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#强制推送</span></span><br><span class="line">$ git push -f</span><br></pre></td></tr></table></figure>
+
+
+
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
