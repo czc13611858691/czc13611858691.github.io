@@ -102,7 +102,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kongjianofczc.top/2021/06/14/%E5%9B%BE%E7%89%87/" data-id="ckpwiwd5a0004c8ufhg4i9b2o" data-title="图片" class="article-share-link">分享</a>
+      <a data-url="https://kongjianofczc.top/2021/06/14/%E5%9B%BE%E7%89%87/" data-id="ckpwjpi2l0003fcuffed54sfi" data-title="图片" class="article-share-link">分享</a>
       
       
       
@@ -128,7 +128,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/06/14/hello-world/">Hello World</a>
+      <a class="p-name article-title" href="/2021/06/14/hello-world/">初始化博客</a>
     </h1>
   
 
@@ -136,8 +136,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><h3 id="初次安装"><a href="#初次安装" class="headerlink" title="初次安装"></a>初次安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+        <h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><h3 id="初次安装"><a href="#初次安装" class="headerlink" title="初次安装"></a>初次安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
 <h3 id="配置hexo文件夹"><a href="#配置hexo文件夹" class="headerlink" title="配置hexo文件夹"></a>配置hexo文件夹</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 
@@ -145,7 +144,7 @@
 <h2 id="Github-Pages和域名配置"><a href="#Github-Pages和域名配置" class="headerlink" title="Github Pages和域名配置"></a>Github Pages和域名配置</h2><p>github 仓库名&lt;用户名&gt;.github.io</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 
-<p>初始化仓库，上传github</p>
+<p>初始化仓库，上传<strong>public文件夹</strong>–&gt;github</p>
 <h3 id="遇到的几个问题"><a href="#遇到的几个问题" class="headerlink" title="遇到的几个问题"></a>遇到的几个问题</h3><p>404</p>
 <ul>
 <li>  仓库名&lt;用户名&gt;.github.io</li>
@@ -175,32 +174,20 @@
 <li>  下载picgo app</li>
 </ul>
 <h3 id="图床设置步骤"><a href="#图床设置步骤" class="headerlink" title="图床设置步骤"></a>图床设置步骤</h3><ul>
-<li><p>  设定仓库名 &lt;用户名&gt;/&lt;仓库名&gt;</p>
-</li>
-<li><p>  设定分支</p>
-</li>
-<li><p>  github setting–&gt;生成token</p>
-</li>
-<li><p>  设定自定义域名</p>
-</li>
-<li><p>```<br>  <a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/">https://raw.githubusercontent.com/</a>&lt;用户名&gt;/&lt;仓库名&gt;/&lt;分支名&gt;</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">## Quick Start![下载 (1)](https://raw.githubusercontent.com/czc13611858691/picgoRepo/master/20210614173511.jpg)</span><br><span class="line"></span><br><span class="line">### Create a new post</span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">$ hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure></li>
+<li>  设定仓库名 &lt;用户名&gt;/&lt;仓库名&gt;</li>
+<li>  设定分支</li>
+<li>  github setting–&gt;生成token</li>
+<li>  设定自定义域名</li>
 </ul>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://raw.githubusercontent.com/&lt;用户名&gt;/&lt;仓库名&gt;/&lt;分支名&gt;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kongjianofczc.top/2021/06/14/hello-world/" data-id="ckpwiwd570003c8uf13um5ejb" data-title="Hello World" class="article-share-link">分享</a>
+      <a data-url="https://kongjianofczc.top/2021/06/14/hello-world/" data-id="ckpwjpi2g0001fcufhnrs3t5g" data-title="初始化博客" class="article-share-link">分享</a>
       
       
       
@@ -247,7 +234,7 @@
           </li>
         
           <li>
-            <a href="/2021/06/14/hello-world/">Hello World</a>
+            <a href="/2021/06/14/hello-world/">初始化博客</a>
           </li>
         
       </ul>
