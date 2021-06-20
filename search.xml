@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>搭建个人博客</title>
+    <url>/2021/06/14/hello-world/</url>
+    <content><![CDATA[<h2 id="一-安装工具"><a href="#一-安装工具" class="headerlink" title="一.安装工具"></a>一.安装工具</h2><ul>
+<li>  git</li>
+<li>  github账号</li>
+<li>  hexo</li>
+</ul>
+<h3 id="1-1-检查版本–帮助你确认是否安装成功"><a href="#1-1-检查版本–帮助你确认是否安装成功" class="headerlink" title="1.1.检查版本–帮助你确认是否安装成功"></a>1.1.检查版本–帮助你确认是否安装成功</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git version</span><br><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2-配置hexo"><a href="#1-2-配置hexo" class="headerlink" title="1.2.配置hexo"></a>1.2.配置hexo</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">打开文件夹</span><br><span class="line">hexo init</span><br><span class="line">hexo s</span><br><span class="line">根据提示信息，在浏览器打开界面可以看到</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210617221341.png" alt="1582491980-e48588aa770e1e2e_fix732"></p>
+<h2 id="二-本地搭建hexo"><a href="#二-本地搭建hexo" class="headerlink" title="二.本地搭建hexo"></a>二.本地搭建hexo</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">初始化文件夹</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line">#要安装一个部署插件hexo-deployer-git。</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">生成静态文件\部署</span><br><span class="line">hexo g -d</span><br><span class="line"></span><br><span class="line">生成新的页面</span><br><span class="line">hexo new &quot;文件名&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="三-上传githubPages和绑定域名"><a href="#三-上传githubPages和绑定域名" class="headerlink" title="三.上传githubPages和绑定域名"></a>三.上传githubPages和绑定域名</h2><ul>
+<li>  github创建仓库 <strong>仓库名&lt;用户名&gt;.github.io</strong></li>
+<li>  上传public文件夹</li>
+<li>  仓库中加入文件CNAME ,其中包含你的域名，和一个空行</li>
+<li>  主机记录选择@ www</li>
+</ul>
+<h2 id="四-picGo-gihub搭建图床"><a href="#四-picGo-gihub搭建图床" class="headerlink" title="四.picGo+gihub搭建图床"></a>四.picGo+gihub搭建图床</h2><p>搭建图床是因为上传的网页需要显示图片，配置的化有点麻烦</p>
+<ul>
+<li><p>  下载PicGo app</p>
+</li>
+<li><p>  github新建仓库  &lt;用户名&gt;/&lt;仓库名&gt;</p>
+</li>
+<li><p>  github setting–&gt;生成token</p>
+</li>
+<li><p>设定自定义域名</p>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xxxxxxxxxx1 1 https://raw.githubusercontent.com/&lt;用户名&gt;/&lt;仓库名&gt;/&lt;分支名&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="五-安装主题"><a href="#五-安装主题" class="headerlink" title="五.安装主题"></a>五.安装主题</h2><p>安装主题butterfly,其中遇到的问题是命令行报错no layout,解决方案</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文件夹名字和_config.yml需要对应</span><br></pre></td></tr></table></figure>
+
+<p>butterfly效果图:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210617222654.png" alt="image-20210617222653729"></p>
+]]></content>
+      <categories>
+        <category>miscellaneous</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用宏定义</title>
+    <url>/2021/06/20/%E5%B8%B8%E7%94%A8%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<h2 id="一-位操作"><a href="#一-位操作" class="headerlink" title="一.位操作"></a>一.位操作</h2><p>userCfg.h</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __USER_CFG_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __USER_CFG_H</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdint.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitRead(value, bit) (((value) &gt;&gt; (bit)) &amp; 0x01)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitWrite(value, bit, bitvalue) (bitvalue ? bitSet(value, bit) : bitClear(value, bit))</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ARR_SIZE(a) (sizeof(a)/sizeof(a[0]))</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
+      <tags>
+        <tag>C</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>移动硬盘无法弹出</title>
+    <url>/2021/06/20/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E6%97%A0%E6%B3%95%E5%BC%B9%E5%87%BA/</url>
+    <content><![CDATA[<h2 id="一-解决方案"><a href="#一-解决方案" class="headerlink" title="一.解决方案"></a>一.解决方案</h2><ol>
+<li> 打开cmd</li>
+<li> diskpart</li>
+<li> select disk 1(选择你的移动硬盘)</li>
+<li> offlinedisk</li>
+<li>再次连接移动硬盘无法打开<ol>
+<li> 打开cmd</li>
+<li> diskpart</li>
+<li> select disk 1(选择你的移动硬盘)</li>
+<li> onlinedisk</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>miscellaneous</category>
+      </categories>
+      <tags>
+        <tag>移动硬盘</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电阻</title>
+    <url>/2021/06/20/%E7%94%B5%E9%98%BB/</url>
+    <content><![CDATA[<h2 id="一-电阻封装大小和功率"><a href="#一-电阻封装大小和功率" class="headerlink" title="一.电阻封装大小和功率"></a>一.电阻封装大小和功率</h2><p>贴片电阻功率过大可能导致损坏</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210619184043.jpg" alt="6358239834202924011351892"></p>
+<h2 id="二-电阻的封装尺寸"><a href="#二-电阻的封装尺寸" class="headerlink" title="二.电阻的封装尺寸"></a>二.电阻的封装尺寸</h2><p>电阻的封装尺寸有公制和英制，我们常用的应该指的是英制度</p>
+<h3 id="2-1-电阻封装尺寸规格图"><a href="#2-1-电阻封装尺寸规格图" class="headerlink" title="2.1.电阻封装尺寸规格图"></a>2.1.电阻封装尺寸规格图</h3><p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210619184428.png" alt="20200717104901994"></p>
+<h3 id="2-2-常见封装尺寸关系"><a href="#2-2-常见封装尺寸关系" class="headerlink" title="2.2.常见封装尺寸关系"></a>2.2.常见封装尺寸关系</h3><p>封装标识（英制）与封装尺寸（毫米）有对应关系：</p>
+<p>0402=1.0mmx0.5mm </p>
+<p>0603=1.6mmx0.8mm </p>
+<p>0805=2.0mmx1.2mm </p>
+<p>1206=3.2mmx1.6mm </p>
+<p>1210=3.2mmx2.5mm </p>
+<h2 id="三-电阻丝印"><a href="#三-电阻丝印" class="headerlink" title="三.电阻丝印"></a>三.电阻丝印</h2><p>XXY：前两位XX为2位有效数据，Y代表10的几次幂</p>
+<p>例：333   33*10^3=33k欧姆</p>
+<p>R有的时候表示小数点</p>
+<p>例:    1R2 = 1.2欧姆</p>
+]]></content>
+      <categories>
+        <category>电路</category>
+      </categories>
+      <tags>
+        <tag>电阻</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>github图床国内不显示</title>
+    <url>/2021/06/20/github%E5%9B%BE%E5%BA%8A%E5%9B%BD%E5%86%85%E4%B8%8D%E6%98%BE%E7%A4%BA/</url>
+    <content><![CDATA[<h2 id="一-借助-jsDelivr-的-CDN"><a href="#一-借助-jsDelivr-的-CDN" class="headerlink" title="一.借助 jsDelivr 的 CDN"></a>一.借助 jsDelivr 的 CDN</h2><p>无须注册或改代码，直接替换链接即可</p>
+<p>例：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.githubusercontent.com/czc13611858691/picgoRepo/master/20210620111425.jpg </span><br><span class="line"></span><br><span class="line">--&gt;</span><br><span class="line">https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210620111425.jpg </span><br></pre></td></tr></table></figure>
+
+<p>通过替换链接就可以在国内访问</p>
+<h2 id="二-实操方法"><a href="#二-实操方法" class="headerlink" title="二.实操方法"></a>二.实操方法</h2><h3 id="2-1-已有文章修改"><a href="#2-1-已有文章修改" class="headerlink" title="2.1.已有文章修改"></a>2.1.已有文章修改</h3><p>使用vscode正则表达式全局替换功能将所有图片替换链接</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210620125839.png" alt="image-20210620125838953"></p>
+<p>正则表达式参考</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 匹配</span><br><span class="line">https://raw\.githubusercontent\.com/([^/]*)/([^/]*)/([^/]*)/(.*)</span><br><span class="line"></span><br><span class="line"># 替换</span><br><span class="line">https://cdn.jsdelivr.net/gh/$1/$2@$3/$4</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-以后的文章可以直接在picgo设置中替换域名"><a href="#2-2-以后的文章可以直接在picgo设置中替换域名" class="headerlink" title="2.2.以后的文章可以直接在picgo设置中替换域名"></a>2.2.以后的文章可以直接在picgo设置中替换域名</h3><p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210620125944.png" alt="image-20210620125944045"></p>
+]]></content>
+      <categories>
+        <category>miscellaneous</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>图床</tag>
+      </tags>
+  </entry>
+</search>
