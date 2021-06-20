@@ -41,6 +41,12 @@
 
 <p>butterfly效果图:</p>
 <p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210617222654.png" alt="image-20210617222653729"></p>
+<h2 id="六-添加搜索功能"><a href="#六-添加搜索功能" class="headerlink" title="六.添加搜索功能"></a>六.添加搜索功能</h2><p>将主题_config.yml中的local_search使能打开</p>
+<p>执行安装指令</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+
+<p>效果如下:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210620200747.png" alt="image-20210620200747233"></p>
 ]]></content>
       <categories>
         <category>miscellaneous</category>
