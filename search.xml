@@ -88,7 +88,6 @@
 <p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210620203427.png" alt="image-20210620203427074"></p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Local search 本地搜索</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  labels:</span><br><span class="line">    input_placeholder: Search for Posts</span><br><span class="line">    hits_empty: &quot;We didn&#x27;t find any results for the search: $&#123;query&#125;&quot; # 如果没有查到内容相关内容显示</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210620203501.png" alt="image-20210620203501342"></p>
 ]]></content>
       <categories>
         <category>miscellaneous</category>
