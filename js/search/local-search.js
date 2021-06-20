@@ -42,7 +42,8 @@ window.addEventListener('load', () => {
   })
 
   function search (path) {
-    fetch(GLOBAL_CONFIG.root + path)
+    // fetch(GLOBAL_CONFIG.root + path)
+    fetch("https://cdn.jsdelivr.net/gh/czc13611858691/czc13611858691.github.io/blob/master/search.xml")
       .then(response => response.text())
       .then(str => new window.DOMParser().parseFromString(str, 'text/xml'))
       .then(data => {
