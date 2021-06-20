@@ -69,7 +69,7 @@
 <li><p>  github setting–&gt;生成token</p>
 </li>
 <li><p>设定自定义域名</p>
-  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">xxxxxxxxxx1 1 https://raw.githubusercontent.com/&lt;用户名&gt;/&lt;仓库名&gt;/&lt;分支名&gt;</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.githubusercontent.com/&lt;用户名&gt;/&lt;仓库名&gt;/&lt;分支名&gt;</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
