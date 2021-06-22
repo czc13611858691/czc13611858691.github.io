@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>搭建个人博客</title>
-    <url>/czc13611858691/czc13611858691.github.io/2021/06/14/hello-world/</url>
+    <url>/2021/06/14/hello-world/</url>
     <content><![CDATA[<h2 id="一-安装工具"><a href="#一-安装工具" class="headerlink" title="一.安装工具"></a>一.安装工具</h2><ul>
 <li>  git</li>
 <li>  github账号</li>
@@ -62,7 +62,7 @@
   </entry>
   <entry>
     <title>github图床国内不显示</title>
-    <url>/czc13611858691/czc13611858691.github.io/2021/06/20/github%E5%9B%BE%E5%BA%8A%E5%9B%BD%E5%86%85%E4%B8%8D%E6%98%BE%E7%A4%BA/</url>
+    <url>/2021/06/20/github%E5%9B%BE%E5%BA%8A%E5%9B%BD%E5%86%85%E4%B8%8D%E6%98%BE%E7%A4%BA/</url>
     <content><![CDATA[<h2 id="一-借助-jsDelivr-的-CDN"><a href="#一-借助-jsDelivr-的-CDN" class="headerlink" title="一.借助 jsDelivr 的 CDN"></a>一.借助 jsDelivr 的 CDN</h2><p>无须注册或改代码，直接替换链接即可</p>
 <p>例：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://raw.githubusercontent.com/czc13611858691/picgoRepo/master/20210620111425.jpg </span><br><span class="line"></span><br><span class="line">--&gt;</span><br><span class="line">https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210620111425.jpg </span><br></pre></td></tr></table></figure>
@@ -85,7 +85,7 @@
   </entry>
   <entry>
     <title>常用宏定义</title>
-    <url>/czc13611858691/czc13611858691.github.io/2021/06/20/%E5%B8%B8%E7%94%A8%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
+    <url>/2021/06/20/%E5%B8%B8%E7%94%A8%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
     <content><![CDATA[<h2 id="一-位操作"><a href="#一-位操作" class="headerlink" title="一.位操作"></a>一.位操作</h2><p>userCfg.h</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __USER_CFG_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __USER_CFG_H</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdint.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitRead(value, bit) (((value) &gt;&gt; (bit)) &amp; 0x01)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitWrite(value, bit, bitvalue) (bitvalue ? bitSet(value, bit) : bitClear(value, bit))</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ARR_SIZE(a) (sizeof(a)/sizeof(a[0]))</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
 
@@ -99,7 +99,7 @@
   </entry>
   <entry>
     <title>电阻</title>
-    <url>/czc13611858691/czc13611858691.github.io/2021/06/20/%E7%94%B5%E9%98%BB/</url>
+    <url>/2021/06/20/%E7%94%B5%E9%98%BB/</url>
     <content><![CDATA[<h2 id="一-电阻封装大小和功率"><a href="#一-电阻封装大小和功率" class="headerlink" title="一.电阻封装大小和功率"></a>一.电阻封装大小和功率</h2><p>贴片电阻功率过大可能导致损坏</p>
 <p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210619184043.jpg" alt="6358239834202924011351892"></p>
 <h2 id="二-电阻的封装尺寸"><a href="#二-电阻的封装尺寸" class="headerlink" title="二.电阻的封装尺寸"></a>二.电阻的封装尺寸</h2><p>电阻的封装尺寸有公制和英制，我们常用的应该指的是英制度</p>
@@ -124,7 +124,7 @@
   </entry>
   <entry>
     <title>移动硬盘无法弹出</title>
-    <url>/czc13611858691/czc13611858691.github.io/2021/06/20/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E6%97%A0%E6%B3%95%E5%BC%B9%E5%87%BA/</url>
+    <url>/2021/06/20/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E6%97%A0%E6%B3%95%E5%BC%B9%E5%87%BA/</url>
     <content><![CDATA[<h2 id="一-解决方案"><a href="#一-解决方案" class="headerlink" title="一.解决方案"></a>一.解决方案</h2><ol>
 <li> 打开cmd</li>
 <li> diskpart</li>
