@@ -24,20 +24,6 @@
       </tags>
   </entry>
   <entry>
-    <title>常用宏定义</title>
-    <url>/czc13611858691/czc13611858691.github.io/2021/06/20/%E5%B8%B8%E7%94%A8%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<h2 id="一-位操作"><a href="#一-位操作" class="headerlink" title="一.位操作"></a>一.位操作</h2><p>userCfg.h</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __USER_CFG_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __USER_CFG_H</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdint.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitRead(value, bit) (((value) &gt;&gt; (bit)) &amp; 0x01)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitWrite(value, bit, bitvalue) (bitvalue ? bitSet(value, bit) : bitClear(value, bit))</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ARR_SIZE(a) (sizeof(a)/sizeof(a[0]))</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>C</category>
-      </categories>
-      <tags>
-        <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>搭建个人博客</title>
     <url>/czc13611858691/czc13611858691.github.io/2021/06/14/hello-world/</url>
     <content><![CDATA[<h2 id="一-安装工具"><a href="#一-安装工具" class="headerlink" title="一.安装工具"></a>一.安装工具</h2><ul>
@@ -98,27 +84,17 @@
       </tags>
   </entry>
   <entry>
-    <title>移动硬盘无法弹出</title>
-    <url>/czc13611858691/czc13611858691.github.io/2021/06/20/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E6%97%A0%E6%B3%95%E5%BC%B9%E5%87%BA/</url>
-    <content><![CDATA[<h2 id="一-解决方案"><a href="#一-解决方案" class="headerlink" title="一.解决方案"></a>一.解决方案</h2><ol>
-<li> 打开cmd</li>
-<li> diskpart</li>
-<li> select disk 1(选择你的移动硬盘)</li>
-<li> offlinedisk</li>
-<li>再次连接移动硬盘无法打开<ol>
-<li> 打开cmd</li>
-<li> diskpart</li>
-<li> select disk 1(选择你的移动硬盘)</li>
-<li> onlinedisk</li>
-</ol>
-</li>
-</ol>
+    <title>常用宏定义</title>
+    <url>/czc13611858691/czc13611858691.github.io/2021/06/20/%E5%B8%B8%E7%94%A8%E5%AE%8F%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<h2 id="一-位操作"><a href="#一-位操作" class="headerlink" title="一.位操作"></a>一.位操作</h2><p>userCfg.h</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __USER_CFG_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __USER_CFG_H</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdint.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitRead(value, bit) (((value) &gt;&gt; (bit)) &amp; 0x01)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitSet(value, bit) ((value) |= (1UL &lt;&lt; (bit)))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitClear(value, bit) ((value) &amp;= ~(1UL &lt;&lt; (bit)))</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> bitWrite(value, bit, bitvalue) (bitvalue ? bitSet(value, bit) : bitClear(value, bit))</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ARR_SIZE(a) (sizeof(a)/sizeof(a[0]))</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
-        <category>miscellaneous</category>
+        <category>C</category>
       </categories>
       <tags>
-        <tag>移动硬盘</tag>
+        <tag>C</tag>
       </tags>
   </entry>
   <entry>
@@ -144,6 +120,30 @@
       </categories>
       <tags>
         <tag>电阻</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>移动硬盘无法弹出</title>
+    <url>/czc13611858691/czc13611858691.github.io/2021/06/20/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98%E6%97%A0%E6%B3%95%E5%BC%B9%E5%87%BA/</url>
+    <content><![CDATA[<h2 id="一-解决方案"><a href="#一-解决方案" class="headerlink" title="一.解决方案"></a>一.解决方案</h2><ol>
+<li> 打开cmd</li>
+<li> diskpart</li>
+<li> select disk 1(选择你的移动硬盘)</li>
+<li> offlinedisk</li>
+<li>再次连接移动硬盘无法打开<ol>
+<li> 打开cmd</li>
+<li> diskpart</li>
+<li> select disk 1(选择你的移动硬盘)</li>
+<li> onlinedisk</li>
+</ol>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>miscellaneous</category>
+      </categories>
+      <tags>
+        <tag>移动硬盘</tag>
       </tags>
   </entry>
 </search>
