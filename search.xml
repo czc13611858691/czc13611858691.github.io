@@ -146,4 +146,20 @@
         <tag>移动硬盘</tag>
       </tags>
   </entry>
+  <entry>
+    <title>kicad开窗散热</title>
+    <url>/2021/06/22/kicad%E5%BC%80%E7%AA%97%E6%95%A3%E7%83%AD/</url>
+    <content><![CDATA[<h2 id="一-说明"><a href="#一-说明" class="headerlink" title="一.说明"></a>一.说明</h2><p>PCB开窗+过孔，裸露出铜，可以起到一定的散热作用</p>
+<h2 id="二-步骤"><a href="#二-步骤" class="headerlink" title="二.步骤"></a>二.步骤</h2><p>在KiCad中，用于描述阻焊层的层文件是F.Mask（顶部阻焊层）和B.Mask（底部阻焊层）。想要将某块区域的阻焊层去除时（也就是我们常说的“绿油开窗”），应当在右侧的<strong>层管理器</strong>中选中该阻焊层（F.Mask或和B.Mask），随后选择添加填充覆铜。</p>
+<p>随后，勾勒出想要开窗的区域形状即可。</p>
+<p>KiCad的Mask层是默认“负片逻辑”的，也就是说，在Mask层添加覆铜，其效果并不是在Mask层刷出绿油，而是去除该区域的绿油。但在输出Gerber文件中的Mask层时，我们并不需要设置Mask层为“负片输出”的格式。</p>
+<p><a href="https://haipeng.me/2019/09/02/kicad-mask-opening/">摘录自–&gt;</a></p>
+<h2 id="三-效果图"><a href="#三-效果图" class="headerlink" title="三.效果图"></a>三.效果图</h2><p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210622233311.png" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20210622233320.png" alt="img"></p>
+]]></content>
+      <tags>
+        <tag>pcb设计</tag>
+        <tag>kicad</tag>
+      </tags>
+  </entry>
 </search>
